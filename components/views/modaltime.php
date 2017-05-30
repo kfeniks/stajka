@@ -8,15 +8,15 @@ use kartik\time\TimePicker;
 <div id="zakazat-zamer_modal" class="modalDialog2">
     <div style="padding-top: 15px">
         <a href="#close" title="Закрыть" class="close">X</a>
-        <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+        <?php $form2 = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-        <?= $form->field($model2, 'name')->textInput(['autofocus' => true]) ?>
+        <?= $form2->field($model2, 'name')->textInput(['autofocus' => true]) ?>
 
-        <?= $form->field($model2, 'phone') ?>
+        <?= $form2->field($model2, 'phone') ?>
         <?php
         echo DatePicker::widget([
             'model' => $model2,
-            'form' => $form,
+            'form' => $form2,
             'attribute' => 'date',
             'type' => DatePicker::TYPE_COMPONENT_PREPEND,
 
@@ -27,7 +27,7 @@ use kartik\time\TimePicker;
         ]);
         ?>
 
-        <?=$form->field($model2, 'time')->widget(TimePicker::classname(), [
+        <?=$form2->field($model2, 'time')->widget(TimePicker::classname(), [
             'pluginOptions' => [
                 'autoclose'=>true,
                 'showSeconds' => true,

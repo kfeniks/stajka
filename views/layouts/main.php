@@ -125,8 +125,7 @@ AppAsset::register($this);
     </div>
 </footer>
 
-<?= ModalWidget::widget(['a' => '1']); ?>
-<?= ModaltimeWidget::widget(); ?>
+<?= ModalWidget::widget(); ?>
 
 <?php $this->endBody() ?>
 </body>
